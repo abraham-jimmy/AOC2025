@@ -75,6 +75,8 @@ _You'll first need to generate the first day_
 To build the project, run the following commands:
 
 ```bash
+mkdir build
+cmake -B build -S .
 cmake --build build --target adventofcode
 ```
 
