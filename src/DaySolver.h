@@ -2,6 +2,7 @@
 
 #include "inputs.h"
 #include <chrono>
+#include <optional>
 #include <string_view>
 #include <variant>
 
