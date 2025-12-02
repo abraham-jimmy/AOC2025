@@ -5,6 +5,17 @@
 
 inline void printUsage() { std::cout << "Usage: ./adventofcode [--day <number>] [--alldays] [--part 1|2] [--help]\n"; }
 
+inline std::vector<std::string> splitByComma(const std::string& s) {
+    std::vector<std::string> result;
+    std::stringstream ss(s);
+    std::string item;
+
+    while (std::getline(ss, item, ',')) {
+        result.push_back(item);
+    }
+    return result;
+}
+
 int main(int argc, char** argv) {
     using namespace adventofcode;
 
