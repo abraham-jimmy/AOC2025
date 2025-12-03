@@ -45,7 +45,7 @@ ResultType Day2::solvePart1() {
         in_data = input_data;
     }
     auto data_lines = splitByComma(in_data);
-    for (const auto& data : data_lines) {
+    for (const std::string& data : data_lines) {
         auto temp = splitByDash(data);
         if (debug) {
             std::cout << "[" << temp.at(0) << ", " << temp.at(1) << "]" << "\n";
